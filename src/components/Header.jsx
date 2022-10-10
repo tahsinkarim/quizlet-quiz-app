@@ -10,15 +10,21 @@ const Header = () => {
             <Link className='btn btn-ghost normal-case text-xl'>Quizlet</Link>
           </div>
           <div className='flex-none'>
-            <ul className='menu menu-horizontal p-0'>
+            <ul className='menu menu-horizontal text-sm p-0 '>
               <li>
-                <Link to='/'>Home</Link>
+                <Link className='px-1' to='/'>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to='/statistics'>Statistics</Link>
+                <Link className='px-1' to='/statistics'>
+                  Statistics
+                </Link>
               </li>
               <li>
-                <Link to='/blog'>Blog</Link>
+                <Link className='px-1' to='/blog'>
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
