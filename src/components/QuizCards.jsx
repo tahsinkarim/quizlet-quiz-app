@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const QuizCards = ({ quiz }) => {
-  const { name, logo, total } = quiz;
+  const { id, name, logo, total } = quiz;
   return (
     <div className='card w-60 bg-gray-200 shadow-xl m-8 mx-auto'>
       <figure className='px-3 pt-3'>
@@ -11,7 +12,9 @@ const QuizCards = ({ quiz }) => {
         <h2 className='card-title'>{name}</h2>
         <p>Total Questions: {total}</p>
         <div className='card-actions'>
-          <button className='btn btn-primary'>Take Quiz</button>
+          <Link to={`/quiz/${id}`}>
+            <button className='btn btn-primary'>Take Quiz</button>
+          </Link>
         </div>
       </div>
     </div>
