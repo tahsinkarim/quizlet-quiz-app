@@ -30,7 +30,7 @@ const Quiz = () => {
       <h1 className='mt-8 text-3xl font-bold text-blue-500 text-center'>
         Practice Quiz for {name}
       </h1>
-      <div className='text-center border rounded-md px-3 py-3 w-96 sm:flex justify-between mx-auto my-4 shadow-md'>
+      <div className='text-center border rounded-md px-3 py-3 w-64 sm:w-96 sm:flex justify-between mx-auto my-4 shadow-md'>
         <p className='rounded-md px-4 py-3 bg-green-600 text-white font-semibold my-1'>
           Correct Answers: {correct}
         </p>
