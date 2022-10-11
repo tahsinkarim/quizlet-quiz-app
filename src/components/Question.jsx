@@ -1,7 +1,7 @@
 import React from "react";
 import Option from "./Option";
 
-const Question = ({ ques }) => {
+const Question = ({ ques, notify }) => {
   const { question, options, id, correctAnswer } = ques;
   const splitQuestion = question.replace(/(<([^>]+)>)/gi, "");
   return (
@@ -13,6 +13,7 @@ const Question = ({ ques }) => {
           opt={opt}
           id={id}
           correctAnswer={correctAnswer}
+          notify={notify}
         ></Option>
       ))}
     </div>
