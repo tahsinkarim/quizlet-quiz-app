@@ -14,7 +14,7 @@ const Option = ({ opt, id, notify, correctAnswer }) => {
         value='HTML'
       />
       <label htmlFor={opt}>{opt}</label>
-      <ToastContainer autoClose={1000} />
+      <ToastContainer autoClose={2000} />
     </div>
   );
 };

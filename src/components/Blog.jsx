@@ -20,7 +20,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className='mt-20'>
+    <div className='mt-20 px-4'>
       {questions.map((question, i) => (
         <div
           className='max-w-xl mx-auto my-4 py-4 px-4 bg-slate-100 rounded-md shadow-md'

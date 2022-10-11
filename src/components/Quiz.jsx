@@ -12,6 +12,9 @@ const Quiz = () => {
 
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
+  const showAnswer = (correctAnswer) => {
+    toast(`Correct answer is: ${correctAnswer}`);
+  };
   const notify = (opt, correctAnswer) => {
     if (opt === correctAnswer) {
       toast("Your answer was correct");
@@ -36,7 +39,12 @@ const Quiz = () => {
         </p>
       </div>
       {questions.map((ques) => (
-        <Question key={ques.id} ques={ques} notify={notify}></Question>
+        <Question
+          key={ques.id}
+          ques={ques}
+          notify={notify}
+          showAnswer={showAnswer}
+        ></Question>
       ))}
     </div>
   );

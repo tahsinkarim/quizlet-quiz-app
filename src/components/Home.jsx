@@ -22,6 +22,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <div></div>
       <div className='grid sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto '>
         {data.map((quiz) => (
           <QuizCards key={quiz.id} quiz={quiz}></QuizCards>
