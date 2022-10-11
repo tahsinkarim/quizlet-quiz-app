@@ -13,11 +13,11 @@ function App() {
     {
       path: "/",
       element: <Main></Main>,
-      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: "/",
           element: <Home></Home>,
+          errorElement: <ErrorPage></ErrorPage>,
           loader: () => {
             return fetch("https://openapi.programming-hero.com/api/quiz");
           },
@@ -26,6 +26,9 @@ function App() {
           path: "/statistics",
           element: <Statistics></Statistics>,
           errorElement: <ErrorPage></ErrorPage>,
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
         },
         {
           path: "/blog",

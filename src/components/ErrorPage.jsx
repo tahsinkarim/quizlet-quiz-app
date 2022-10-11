@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img from "../components/images/error.png";
-import Header from "./Header";
 
 const ErrorPage = () => {
   return (
     <div>
-      <Header></Header>
       <div>
         <h1 className='text-2xl font-bold text-center mt-4'>
           Oops! Page not found
