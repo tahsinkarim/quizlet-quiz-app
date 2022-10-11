@@ -15,7 +15,7 @@ const Home = () => {
           <h2 className='text-4xl font-bold text-primary'>
             Best Online Quizzes
           </h2>
-          <p className='mt-4 max-w-xs text-gray-500'>
+          <p className='mt-4 max-w-xs text-gray-500 font-semibold'>
             Keeping yourself entertained and educated is just a quiz away.our
             online quizzes are an excellent source of knowledge on front-end
             technologies.

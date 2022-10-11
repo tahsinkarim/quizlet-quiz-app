@@ -23,4 +23,12 @@
 - For styling I used Tailwind CSS. It really helps with not writing unnecessary CSS.
 - For routing I used React Router and `npm install react-toastify` to generate dynamic toasts.
 
+# Features
+
+- Generates dynamic routes and pages for each quiz.
+- Notifies with toast when clicked on answers.
+- Eye button to reveal correct answer with toast.
+- Keeps count of correct and wrong answer.
+- A statistic page to display a chart of total number of questions for each quiz.
+
 Live link: [quizlet-quiz-app](https://quizlet-quiz-app.netlify.app/)
