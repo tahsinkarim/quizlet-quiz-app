@@ -7,7 +7,9 @@ const Header = () => {
       <nav className='navbar bg-primary text-primary-content'>
         <div className='container mx-auto'>
           <div className='flex-1'>
-            <Link className='btn btn-ghost normal-case text-xl'>Quizlet</Link>
+            <Link to='/' className='btn btn-ghost normal-case text-xl'>
+              Quizlet
+            </Link>
           </div>
           <div className='flex-none'>
             <ul className='menu menu-horizontal text-sm p-0 sm:text-base'>

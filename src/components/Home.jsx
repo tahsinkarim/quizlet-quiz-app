@@ -6,7 +6,7 @@ import QuizCards from "./QuizCards";
 const Home = () => {
   const { data } = useLoaderData();
   return (
-    <div>
+    <div className='px-4'>
       <div className='grid md:grid-cols-2 max-w-6xl mx-auto justify-center items-center'>
         <div className='mx-auto md:order-last'>
           <img src={img} alt='' />

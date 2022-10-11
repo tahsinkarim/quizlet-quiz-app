@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const QuizCards = ({ quiz }) => {
   const { id, name, logo, total } = quiz;
   return (
-    <div className='card w-60 bg-gray-200 shadow-xl m-8 mx-auto'>
+    <div className='card w-96 sm:w-60 bg-gray-200 shadow-xl m-8 mx-auto'>
       <figure className='px-3 pt-3'>
         <img src={logo} alt='Shoes' className='rounded-xl' />
       </figure>
